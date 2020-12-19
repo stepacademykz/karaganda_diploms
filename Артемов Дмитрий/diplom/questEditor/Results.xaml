@@ -1,0 +1,33 @@
+﻿<Window x:Class="questEditor.Results"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:questEditor"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Результаты" Height="500" Width="950">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" HorizontalAlignment="Left" FontSize="16" Name="dgResults" IsReadOnly="True" >
+        </DataGrid>
+        <Label Grid.Row="3" Grid.Column="0" FontSize="20" Content="Введите фамилию"></Label>
+        <TextBox Grid.Row="4" Grid.Column="0" FontSize="20" x:Name="find" Text=""></TextBox>
+        <Button Grid.Row="6" Grid.Column="0" x:Name="nameSearch" FontSize="20" Content="Найти" Click="NameSearch_Click"></Button>
+        <Button Grid.Row="8" Grid.Column="0" x:Name="findAll" FontSize="20" Content="Все результаты" Click="FindAll_Click"></Button>
+
+    </Grid>
+</Window>

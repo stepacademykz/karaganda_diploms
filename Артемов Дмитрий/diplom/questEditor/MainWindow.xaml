@@ -1,0 +1,16 @@
+﻿<Window x:Class="questEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:questEditor"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Редактор вопросов" Height="300" Width="700">
+    <StackPanel>
+        <Button x:Name="editPhys" Margin="10" FontSize="20" Content="Редактор вопросов по физике" Click="EditPhys_Click"></Button>
+        <Button x:Name="editIt" Margin="10" FontSize="20" Content="Редактор вопросов по информатике" Click="EditIt_Click"></Button>
+        <Button x:Name="results" Margin="10" FontSize="20" Content="Результаты тестирования" Click="Results_Click"></Button>
+        <Button x:Name="exit" Margin="10" FontSize="20" Content="Выход" Click="Exit_Click"></Button>
+    </StackPanel>
+</Window>
